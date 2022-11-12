@@ -124,7 +124,7 @@ trafficserver (8.0.3-1ubuntu1ppa5~18.04.1) bionic; urgency=medium
 
 trafficserver (8.0.3-1ubuntu1ppa4~18.04.1) bionic; urgency=medium
 
-  * Update scripts to /opt/trafficserver/etc
+  * Update scripts to /etc/trafficserver
 
  -- Hiroaki Nakamura <hnakamur@gmail.com>  Tue, 09 Apr 2019 17:43:50 +0900
 

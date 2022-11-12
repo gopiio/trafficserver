@@ -32,7 +32,7 @@ configure_flags = \
 	--pdfdir=/usr/share/doc/trafficserver \
 	--psdir=/usr/share/doc/trafficserver \
 	--exec-prefix=/usr \
-	--sysconfdir=/opt/trafficserver/etc --libdir=/usr/lib/trafficserver \
+	--sysconfdir=/etc/trafficserver --libdir=/usr/lib/trafficserver \
 	--localstatedir=/opt/trafficserver/var \
 	--libexecdir=/usr/lib/trafficserver/modules \
 	--with-user=root --with-group=root --disable-silent-rules \
@@ -70,7 +70,7 @@ endif
 override_dh_install:
 	dh_install
 	dh_missing --list-missing
-	./debian/change_config.pl debian/trafficserver/opt/trafficserver/etc/records.config
+	./debian/change_config.pl debian/trafficserver/etc/trafficserver/records.config
 	# Lintian fixes
 	mkdir -p debian/trafficserver/usr/share/doc/trafficserver
 	cat CHANGELOG-* >> debian/trafficserver/usr/share/doc/trafficserver/changelog
